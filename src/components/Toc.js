@@ -7,7 +7,6 @@ export default function Toc(props) {
   let url = post.items.map(function(post) {
     return post['url'].substring(1)
   })
-  console.log(post)
 
   return (
     /* Step 1: Testing with Props Only */
