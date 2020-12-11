@@ -39,6 +39,9 @@ module.exports = {
           },
           {
             resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              icon: false,
+            },
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,

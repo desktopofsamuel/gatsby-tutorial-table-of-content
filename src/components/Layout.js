@@ -9,6 +9,11 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
+    if (typeof window !== 'undefined') {
+      // eslint-disable-next-line global-require
+      require('smooth-scroll')('a[href*="#"]')
+    }
+
     if (location.pathname === rootPath) {
       header = (
         <h1
