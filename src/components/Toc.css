@@ -1,6 +1,6 @@
 nav {
   position: fixed;
-  top: 50vh;
+  top: auto;
   right: 5vw;
   margin-left: 36px;
   max-width: 250px;
@@ -25,4 +25,11 @@ ul.toc-list > li > a {
 
 ul.toc-list > li.is-current > a {
   color: black;
+}
+
+/* Hide Table of Content when screen is smaller than 1440px */
+@media only screen and (max-width: 1439px) {
+  nav {
+    display: none;
+  }
 }
